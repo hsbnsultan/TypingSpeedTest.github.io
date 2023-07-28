@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="typing-container">
+      <p class="quote">
+        "Life is like riding a bicycle. To keep your balance, you must keep
+        moving."
+      </p>
+      <textarea
+        class="input-area"
+        placeholder="Type the above quote and click Start"
+      ></textarea>
+      <button class="start-button">Start</button>
+      <button class="finish-button">Finish</button>
+      <button class="exit-button">Exit</button>
+      <p class="timer">Time: <span id="time">45</span> seconds</p>
+      <p class="result"></p>
+    </div>
+
+    <!-- Preloader overlay -->
+    <div class="preloader-overlay">
+      <div class="preloader"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

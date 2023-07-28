@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test - Start</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader overlay -->
+    <div class="preloader-overlay">
+      <div class="preloader"></div>
+    </div>
+
+    <div class="start-container">
+      <h1>Welcome to Typing Speed Test!</h1>
+      <p>Get ready to test your typing speed and accuracy.</p>
+      <button class="start-button">Start Game</button>
+    </div>
+    <script>
+      // script.js
+      const startButton = document.querySelector(".start-button");
+      const preloaderOverlay = document.querySelector(".preloader-overlay");
+
+      // Function to redirect to the game page
+      function redirectToGamePage() {
+        // Show the preloader overlay
+        preloaderOverlay.style.display = "block";
+
+        // Redirect to the game page (typing.html) after a short delay (1 second in this case)
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1000);
+      }
+
+      // Event listener for starting the game
+      startButton.addEventListener("click", redirectToGamePage);
+    </script>
+  </body>
+</html>
